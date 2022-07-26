@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Criolla";
+  font-weight: 700;
+  src: url("../../assets/CriollaSansv0.7-MediumStd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Luba";
+  font-weight: 700;
+  src: url("../../assets/LubaSans-Black.otf") format("opentype");
+}
+
+.root {
+  background: #481a6f;
+}
+
+.comuna {
+  font-family: Luba;
+  fill: white;
+}
+
+.aprueba {
+  font-family: Criolla;
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.elije {
+  font-family: Criolla;
+  transform: rotate(-45deg);
+  transform-origin: center;
+}

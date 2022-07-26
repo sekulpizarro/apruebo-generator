@@ -1,13 +1,12 @@
-import apruebaimg from "./assets/apruebafeliz.png";
-import Criolla from "./assets/CriollaSansv0.7-MediumStd.otf";
-import Lubasans from "./assets/LubaSans-Black.otf";
+import apruebaimg from "../../assets/apruebafeliz.png";
+import Criolla from "../../assets/CriollaSansv0.7-MediumStd.otf";
+import Lubasans from "../../assets/LubaSans-Black.otf";
 export const handler = ({ inputs, mechanic, sketch }) => {
   const { comuna, persona } = inputs;
 
   const center = [540, 540];
   const pi = Math.PI;
-  //new FontFace('LubaSans-Black', 'url(/assets/LubaSans-Black.otf)');
-  //new FontFace('Criolla', 'url(/assets/CriollaSansv0.7-MediumStd)');
+  
   let apruebafeliz;
   let Criollafont;
   let Lubafont;
