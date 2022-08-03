@@ -5,7 +5,6 @@
 
   "scripts": {
     "dev": "mechanic dev",
-    "build": "mechanic build",
     "serve": "mechanic serve",
     "new": "mechanic new function",
     "predeploy": "npm run build",
