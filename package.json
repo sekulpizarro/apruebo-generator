@@ -1,20 +1,26 @@
 {
   "name": "my-project",
   "version": "0.0.0",
+  "homepage": "https://sekulpizarro.github.io/apruebo-generator-test/",
   "scripts": {
     "dev": "mechanic dev",
     "build": "mechanic build",
     "serve": "mechanic serve",
-    "new": "mechanic new function"
+    "new": "mechanic new function",
+    "predeploy:": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "@mechanic-design/core": "^2.0.0-beta.8",
-    "@mechanic-design/cli": "^2.0.0-beta.8"
+    "@mechanic-design/cli": "^2.0.0-beta.8",
+    "@mechanic-design/core": "^2.0.0-beta.8"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@mechanic-design/engine-canvas": "^2.0.0-beta.8",
     "@mechanic-design/engine-p5": "^2.0.0-beta.8",
-    "@mechanic-design/engine-react": "^2.0.0-beta.8"
+    "@mechanic-design/engine-react": "^2.0.0-beta.8",
+    "gh-pages": "^4.0.0",
+    "save-dev": "^0.0.1-security"
   },
   "prettier": {}
 }
