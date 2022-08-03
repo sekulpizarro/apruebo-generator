@@ -120,5 +120,5 @@ export const inputs = {
 
 export const settings = {
   engine: require("@mechanic-design/engine-react"),
-  showMultipleExports: true,
+  showMultipleExports: false,
 };
