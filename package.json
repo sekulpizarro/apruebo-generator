@@ -1,7 +1,7 @@
 {
   "name": "my-project",
   "version": "0.0.0",
-  "homepage":"https://yourusername.github.io/repository-name",
+  "homepage":"https://sekulpizarro.github.io/apruebo-generator",
 
   "scripts": {
     "dev": "mechanic dev",
