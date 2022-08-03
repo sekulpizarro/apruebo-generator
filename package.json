@@ -1,7 +1,7 @@
 {
   "name": "my-project",
   "version": "0.0.0",
-  "homepage": ".",
+  "homepage": "https://sekulpizarro.github.io/apruebo-generator",
   "scripts": {
     "dev": "mechanic dev",
     "build":"mechanic build",
