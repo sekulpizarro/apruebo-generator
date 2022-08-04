@@ -7,7 +7,18 @@ import a from "../../assets/caras/a";
 
 import b from "../../assets/caras/b";
 
+//const largo = {};
 
+function factor (largo) {
+
+  if ( largo > 15 ) {
+
+    return 11;
+
+  } else {
+    return 9;
+  }
+}
 
 const colores = {
   azul: "#1a7fd3",
@@ -25,6 +36,7 @@ export const handler = ({ inputs, mechanic }) => {
   useEffect(() => {
     mechanic.done();
   }, []);
+
 
   return (
     <svg width={width} height={height} className={css.root}>
@@ -77,7 +89,7 @@ export const handler = ({ inputs, mechanic }) => {
           y={4.14*height/5}
           textAnchor="middle"
           className={css.comuna}
-          style={{ fontSize: width / 11 }}
+          style={{ fontSize: width / factor (inputs.comuna.length) }}
         >
           {comuna}
         </text>
@@ -86,6 +98,7 @@ export const handler = ({ inputs, mechanic }) => {
     </svg>
   );
 };
+
 
 export const inputs = {
   width: {
@@ -117,6 +130,7 @@ export const inputs = {
     label: "Apruebista 2",
   },
 };
+
 
 export const settings = {
   engine: require("@mechanic-design/engine-react"),
