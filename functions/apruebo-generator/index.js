@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import * as css from "./styles.module.css";
 import luba from "../../assets/LubaSans-Black.otf";
 import a from "../../assets/caras/a";
 import b from "../../assets/caras/b";
@@ -137,7 +136,6 @@ export const handler = ({ inputs, mechanic }) => {
           x={width / 2}
           y={(4.08 * height) / 5}
           textAnchor="middle"
-          className={css.comuna}
           fill={colores.blanco}
           style={{ fontSize: width / 12 }}
         >
@@ -148,7 +146,6 @@ export const handler = ({ inputs, mechanic }) => {
           x={width / 2}
           y={(4.14 * height) / 5}
           textAnchor="middle"
-          className={css.comuna}
           style={{
             fontSize: width / factor(comuna.length),
             fontFamily: "Luba",
