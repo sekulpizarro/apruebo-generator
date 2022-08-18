@@ -155,7 +155,7 @@ export const handler = ({ inputs, mechanic }) => {
             fill: "white",
           }}
         >
-          {comuna}
+          {comuna.toUpperCase()}
         </text>
       )}
     </svg>
