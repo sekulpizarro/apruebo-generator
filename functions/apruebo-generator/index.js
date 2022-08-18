@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
-import * as css from "./styles.module.css";
-
-import { comunas } from "../../assets/comunas";
-
+import luba from "../../assets/LubaSans-Black.otf";
 import a from "../../assets/caras/a";
 import b from "../../assets/caras/b";
-
-//const largo = {};
 
 function factor(largo) {
   if (largo > 15) {
@@ -22,6 +17,7 @@ const colores = {
   rojo: "#f64752",
   blanco: "#ffffff",
   gris: "#dad1e2",
+  morado: "#481a6f",
 };
 
 export const handler = ({ inputs, mechanic }) => {
@@ -32,13 +28,17 @@ export const handler = ({ inputs, mechanic }) => {
   }, []);
 
   return (
-    <svg width={width} height={height} className={css.root}>
-      <svg
-        width={width}
-        viewBox="0 0 1080 1080"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+    <svg width={width} height={height}>
+      <style>
+        {`@font-face {
+  font-family: "Luba";
+  font-weight: 700;
+  src: url("${luba}") format("opentype");
+}
+`}
+      </style>
+      <rect width={width} height={height} fill={colores.morado} />
+      <g transform={`scale(${width / 1080})`}>
         <path
           d="M371.42 423.98C455.583 423.98 523.81 355.753 523.81 271.59C523.81 187.427 455.583 119.2 371.42 119.2C287.257 119.2 219.03 187.427 219.03 271.59C219.03 355.753 287.257 423.98 371.42 423.98Z"
           fill="#1A7FD3"
@@ -130,13 +130,12 @@ export const handler = ({ inputs, mechanic }) => {
         />
         {a[caraA]}
         {b[caraB]}
-      </svg>
+      </g>
       {comuna == "comuna" ? (
         <text
           x={width / 2}
           y={(4.08 * height) / 5}
           textAnchor="middle"
-          className={css.comuna}
           fill={colores.blanco}
           style={{ fontSize: width / 12 }}
         >
@@ -147,10 +146,13 @@ export const handler = ({ inputs, mechanic }) => {
           x={width / 2}
           y={(4.14 * height) / 5}
           textAnchor="middle"
-          className={css.comuna}
-          style={{ fontSize: width / factor(comuna.length) }}
+          style={{
+            fontSize: width / factor(comuna.length),
+            fontFamily: "Luba",
+            fill: "white",
+          }}
         >
-          {comuna}
+          {comuna.toUpperCase()}
         </text>
       )}
     </svg>
