@@ -1,0 +1,10 @@
+.root {
+  margin-top: 16px;
+}
+.input {
+  margin-top: 16px;
+}
+
+:global(.SideBar-module__inputs) > :nth-child(-n + 2) {
+  display: none;
+}

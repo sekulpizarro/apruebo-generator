@@ -4,7 +4,7 @@
   "homepage": "https://sekulpizarro.github.io/apruebo-generator",
   "scripts": {
     "dev": "mechanic dev",
-    "build":"mechanic build",
+    "build": "mechanic build",
     "serve": "mechanic serve",
     "new": "mechanic new function"
   },
@@ -13,11 +13,9 @@
     "@mechanic-design/core": "^2.0.0-beta.8"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@mechanic-design/engine-canvas": "^2.0.0-beta.8",
     "@mechanic-design/engine-p5": "^2.0.0-beta.8",
-    "@mechanic-design/engine-react": "^2.0.0-beta.8",
-    "save-dev": "^0.0.1-security"
+    "@mechanic-design/engine-react": "^2.0.0-beta.8"
   },
   "prettier": {}
 }
