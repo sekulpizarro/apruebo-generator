@@ -4,8 +4,8 @@
   src: url("../../assets/LubaSans-Black.otf") format("opentype");
 }
 
-.root {
-  background: #481a6f;
+.bg {
+  fill: #481a6f;
 }
 
 .comuna {
